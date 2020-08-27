@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* todo wrap */
+.wrap{
+    background-color: rgb(241, 229, 207);
+    height: 100%;
+}
+
+/* todo header */
+.header{
+    background-color: #424242;
+    padding: 92px 0;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.logo{
+    background-image: url("../img/BMICLogo.png");
+    background-repeat: no-repeat;
+    width: 117px;
+    height: 117px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.wrap form{
+    display: flex;
+    flex-direction: column;
+    margin: auto 100px;
+    /* background-color: violet; */
+}
+.wrap label{
+    color: #FFD366;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.wrap input{
+    width: 250px;
+    font-size: 24px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: 2px solid #FFD366;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+}
+/** 移除 [type="number"] 裡面上下箭頭(google版)*/
+.wrap input[type='number']::-webkit-outer-spin-button,
+.wrap input[type='number']::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+.res{
+    line-height: 117px;
+    padding: 20px 40px;
+    background-color: #DEA821;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #424242 ;
+    font-weight: 900;
+}
+.res:hover{
+    background-color: #FFD366;
+    box-shadow: 0px 0px 15px #FFD366;
+}
+
+/* ! "看結果"的變化 */
+.circle{
+    /* display: none; */
+    /* background-color: blanchedalmond; */
+}
+/* good */
+.goodRes{
+    background-color: #424242;
+    border: 6px solid #86D73F;
+    border-radius: 50%;
+    padding: 50% 35%;
+    text-align: center;
+    color: #86D73F;
+    position: relative;
+    display: inline-block;
+}
+.goodRes a{
+    background-image: url("../img/icons_loop.png");
+        background-position: center;
+    border-radius: 50%;
+    border: 5px solid #424242;
+    background-color: #86D73F;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+        right: -3px;
+        bottom: 3px;
+}
+.goodRes h3{
+    font-size: 32px;
+}
+.goodRes p{
+    font-size: 14px;
+}
+/* !圈圈變色 (預設>>綠色) */
+.circleNone{
+    display: none;
+}
+/* 過輕 */
+.overThinRes{
+    border: 6px solid #31BAF9;
+    color: #31BAF9;
+}
+.overThinRes a{
+    background-color: #31BAF9;
+}
+/* 過重 */
+.tooHeavyRes{
+    border: 6px solid #FF982D;
+    color: #FF982D;
+}
+.tooHeavyRes a{
+    background-color: #FF982D;
+}
+/* 輕度肥胖 */
+.mildObesityRes{
+    border: 6px solid #FF6C03;
+    color: #FF6C03;
+}
+.mildObesityRes a{
+    background-color: #FF6C03;
+}
+/* 中度肥胖 */
+.moderateObesityRes{
+    border: 6px solid #FF6C03;
+    color: #FF6C03;
+}
+.moderateObesityRes a{
+    background-color: #FF6C03;
+}
+/* 重度肥胖 */
+.severeObesityRes{
+    border: 6px solid #FF1200;
+    color: #FF1200;
+}
+.severeObesityRes a{
+    background-color: #FF1200;
+}
+
+/* !圈圈旁邊的字啦 */
+/* 預設 */
+.text{
+    display: none;
+    font-size: 32px;
+    margin-left: 80px;
+    font-weight: 1000;
+}
+/* 理想 */
+.goodText{
+    display: inline-block;
+    color: #86D73F;
+}
+/* 過瘦 */
+.overThinText{
+    display: inline-block;
+    color: #31BAF9;
+}
+/* 過重 */
+.tooHeavyText{
+    display: inline-block;
+    color: #FF982D;
+}
+/* 輕度肥胖 */
+.mildObesityText{
+    display: inline-block;
+    color: #FF6C03;
+}
+/* 中度肥胖 */
+.moderateObesityText{
+    display: inline-block;
+    color: #FF6C03;
+}
+/* 重度肥胖 */
+.severeObesityText{
+    display: inline-block;
+    color: #FF1200;
+}
+
+/* todo content */
+.content{
+    /* background-color: violet; */
+    margin: 0 auto;
+    width: 1024px;
+    text-align: center;
+    padding: 48px 100px;
+}
+.content h2{
+    /* background-color: wheat; */
+    margin-bottom: 3.5%;
+}
+
+/* !邊框線顏色 (開始)*/
+/* 剛好 */
+.good{
+    background-color: white;
+    display: inline-block;
+    padding: 2.1% 1.9%;
+    margin-bottom: 1.6%;
+    width: 650px;
+    border-left: 7px solid #86D73F;
+    position: relative;
+}
+/* 過輕 */
+.overThin{
+    background-color: white;
+    display: inline-block;
+    padding: 2.1% 1.9%;
+    margin-bottom: 1.6%;
+    width: 650px;
+    border-left: 7px solid #31BAF9;
+    position: relative;
+}
+/* 過重 */
+.tooHeavy
+{
+    background-color: white;
+    display: inline-block;
+    padding: 2.1% 1.9%;
+    margin-bottom: 1.6%;
+    width: 650px;
+    border-left: 7px solid #FF982D;
+    position: relative;
+}
+/* 輕度肥胖 */
+.mildObesity{
+    background-color: white;
+    display: inline-block;
+    padding: 2.1% 1.9%;
+    margin-bottom: 1.6%;
+    width: 650px;
+    border-left: 7px solid #FF6C03;
+    position: relative;
+}
+/* 中度肥胖 */
+.moderateObesity{
+    background-color: white;
+    display: inline-block;
+    padding: 2.1% 1.9%;
+    margin-bottom: 1.6%;
+    width: 650px;
+    border-left: 7px solid #FF6C03;
+    position: relative;
+}
+/* 重度肥胖 */
+.severeObesity
+{
+    background-color: white;
+    display: inline-block;
+    padding: 2.1% 1.9%;
+    margin-bottom: 1.6%;
+    width: 650px;
+    border-left: 7px solid #FF1200;
+    position: relative;
+}
+/* !邊框線顏色 (結束)*/
+
+.items{
+    font-size: 12px;
+}
+.textRes{
+    display: inline-block;
+    margin-right: 9.7%;
+    font-size: 20px;
+}
+.numberRes{
+    margin-left: 0.7%;
+    margin-right: 4.1%;
+    font-size: 20px;
+}
+.cancel{
+    position: absolute;
+        right: 10px;
+}
+
+/* todo footer */
+.footer{
+    padding: 1.8% 47%;
+    text-align: center;
+    background-color: black;
+    margin-top: 50px;
+}
+.footer img{
+    width: 55px;
+    height: 55px;
+}
