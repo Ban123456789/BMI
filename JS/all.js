@@ -228,6 +228,7 @@ update();
 // todo 移除資料
     outputResult.addEventListener('click',function(e){
         if(e.target.nodeName == 'A'){
+            e.preventDefault();
             var newData = data.splice(e.target.dataset.num,1);
                 localStorage.setItem('items',JSON.stringify(data));
             update();
